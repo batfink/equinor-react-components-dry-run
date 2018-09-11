@@ -2,6 +2,8 @@
     "name": "@equinor-internal/bar",
     "main": "Bar",
     "version": "0.0.2",
+    "author": "Victor Nystad",
+    "license": "UNLICENSED",
     "dependencies": {
         "prop-types": "^15.6.2",
         "react": "^16.5.0",
