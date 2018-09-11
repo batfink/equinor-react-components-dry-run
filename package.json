@@ -6,13 +6,14 @@
     ],
     "scripts": {
         "bootstrap": "lerna bootstrap",
-        "clean": "lerna clean",
         "start": "start-storybook -p 9001",
         "build": "build-storybook -o public",
-        "pub": "lerna publish",
-        "lerna": "lerna"
+        "lerna": "lerna",
+        "commitmsg": "commitlint -e $GIT_PARAMS"
     },
     "devDependencies": {
+        "@commitlint/cli": "^7.1.2",
+        "@commitlint/config-conventional": "^7.1.2",
         "@dump247/storybook-state": "^1.5.0",
         "@storybook/addon-actions": "^3.4.10",
         "@storybook/addon-knobs": "^3.4.10",
@@ -32,6 +33,44 @@
         "eslint-plugin-import": "^2.14.0",
         "eslint-plugin-jsx-a11y": "^6.1.1",
         "eslint-plugin-react": "^7.11.1",
+        "husky": "^0.14.3",
         "lerna": "^3.3.0"
+    },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
+    "lerna": {
+        "packages": [
+            "packages/*"
+        ],
+        "version": "independent",
+        "npmClient": "yarn",
+        "useWorkspaces": true,
+        "command": {
+            "publish": {
+                "conventionalCommits": true
+            }
+        },
+        "babel": {
+            "presets": [
+                "react",
+                ["env", {
+                    "targets": {
+                        "browsers": [ "last 2 versions", "not ie <= 10" ],
+                        "node": "current"
+                    }
+                }]
+            ],
+            "plugins": [
+                [
+                    "babel-plugin-styled-components", {
+                        "fileName": false
+                    }
+                ],
+                "transform-object-rest-spread"
+            ]
+        }
     }
 }
