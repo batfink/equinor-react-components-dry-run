@@ -1,0 +1,35 @@
+{
+    "name": "@equinior-internal/react-gui-components",
+    "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
+    "scripts": {
+        "bootstrap": "lerna bootstrap",
+        "clean": "lerna clean",
+        "start": "start-storybook -p 9001",
+        "build": "build-storybook -o public"
+    },
+    "devDependencies": {
+        "@dump247/storybook-state": "^1.5.0",
+        "@storybook/addon-actions": "^3.4.10",
+        "@storybook/addon-knobs": "^3.4.10",
+        "@storybook/react": "^3.4.10",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^9.0.0",
+        "babel-loader": "^8.0.2",
+        "babel-plugin-styled-components": "^1.6.4",
+        "babel-plugin-transform-object-rest-spread": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-react": "^6.24.1",
+        "eslint": "^5.5.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-import-resolver-node": "^0.3.2",
+        "eslint-loader": "^2.1.0",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^6.1.1",
+        "eslint-plugin-react": "^7.11.1",
+        "lerna": "^3.3.0"
+    }
+}

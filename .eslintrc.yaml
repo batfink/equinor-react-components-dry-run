@@ -1,0 +1,82 @@
+---
+extends:
+    # use airbnb instead of airbnb-base to include react
+    - "airbnb"
+env:
+    mocha: true
+    browser: true
+parser: "babel-eslint"
+settings:
+    import/resolver:
+        node:
+            extensions:
+                - ".js"
+                - ".jsx"
+            moduleDirectory:
+                - "src"
+                - "node_modules"
+rules:
+    # indent with 4 spaces
+    indent:
+        - "warn"
+        - 4
+        - SwitchCase: 1
+    # set max-length to 120, 80 is too narrow
+    max-len:
+        - "warn"
+        - "code": 120
+    # allow underscore-dangles
+    no-underscore-dangle: "off"
+    # don't use semi-colons
+    semi:
+        - "warn"
+        - "never"
+    # classes can have methods that don't use this (helper methods)
+    class-methods-use-this: 0
+    # 4 space indentation in jsx-files
+    react/jsx-indent:
+        - "enabled"
+        - 4
+    # A multi-line jsx-tag should have 4 space indentation before props
+    react/jsx-indent-props:
+        - "enabled"
+        - 4
+    # add spaces inside curlies in jsx-files: { foobar }
+    react/jsx-curly-spacing:
+        - 2
+        - "when": "always"
+    # A multi-line jsx-tag should have its closing bracket after the last prop
+    react/jsx-closing-bracket-location:
+        - "enabled"
+        - "after-props"
+    # sometimes a proptype is an array or an object, default is too strict
+    react/forbid-prop-types: "disabled"
+    # if a label wraps a form element the label is superfluous
+    jsx-a11y/label-has-for: "off"
+    # Forbid the import of external modules that are not declared in the package.json's dependencies,
+    # devDependencies, optionalDependencies or peerDependencies
+    # packageDir points to the location of the root package.json to allow for the usage of package.json-files
+    # in components to resolve to main files other than index.js
+    import/no-extraneous-dependencies:
+        - "warn":
+            packageDir: "./"
+    linebreak-style: 0
+    react/sort-comp:
+        - 1
+        - order:
+            - "static-methods"
+            - "instance-variables"
+            - "lifecycle"
+            - "everything-else"
+            - "render"
+    import/no-named-as-default: 0
+    no-unused-vars:
+        - "warn"
+        - "vars": "all"
+          "args": "after-used"
+          "ignoreRestSiblings": false
+    # Don't force newline in destructured arguments
+    object-curly-newline:
+        - "warn"
+        - "ObjectPattern":
+            "multiline": true
