@@ -6,7 +6,18 @@ const Bar = ({ className, ...props }) => <Wrapper className={ className } { ...p
 
 const Wrapper = styled.div`
     padding: 20px;
-    background: violet;
+    background: brown;
+    position: relative;
+    font: 12px sans-serif;
+
+    &::before {
+        position: absolute;
+        content: 'Bar';
+        top: 2px;
+        left: 2px;
+        padding: 0.2em;
+        background: rgba(255,255,255,0.8);
+    }
 `
 
 Bar.propTypes = {

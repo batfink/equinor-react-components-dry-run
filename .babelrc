@@ -1,0 +1,37 @@
+{
+    "presets": [
+        "react",
+        ["env", {
+            "targets": {
+                "browsers": [ "last 2 versions", "not ie <= 10" ],
+                "node": "current",
+            }
+        }]
+    ],
+    "env": {
+        "test": {
+            "plugins": [
+                [
+                    "babel-plugin-styled-components", {
+                        "fileName": false,
+                    }
+                ],
+                [
+                    "istanbul", {
+                        "exclude": [
+                            "**/*.spec.js",
+                        ]
+                    }
+                ]
+            ]
+        }
+    },
+    "plugins": [
+        [
+            "babel-plugin-styled-components", {
+                "fileName": false,
+            }
+        ],
+        "transform-object-rest-spread",
+    ]
+}

@@ -1,10 +1,11 @@
 {
     "name": "@equinor-internal/foo",
     "main": "Foo",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "dependencies": {
         "prop-types": "^15.6.2",
         "react": "^16.5.0",
-        "styled-components": "^3.4.5"
+        "styled-components": "^3.4.5",
+        "@equinor-internal/bar": "^0.0.1"
     }
 }
