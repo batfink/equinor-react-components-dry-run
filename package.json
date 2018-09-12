@@ -1,5 +1,6 @@
 {
     "name": "@equinior-internal/react-gui-components",
+    "version": "1.0.0",
     "private": true,
     "workspaces": [
         "packages/*"
@@ -42,15 +43,14 @@
         ]
     },
     "lerna": {
-        "packages": [
-            "packages/*"
-        ],
         "version": "independent",
         "npmClient": "yarn",
         "useWorkspaces": true,
         "command": {
             "publish": {
-                "conventionalCommits": true
+                "conventionalCommits": true,
+                "allowBranch": "master",
+                "message": "chore(release): publish %s"
             }
         }
     },
