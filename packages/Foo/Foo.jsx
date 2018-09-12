@@ -7,7 +7,7 @@ const Foo = ({ className, ...props }) => (<Wrapper className={ className } { ...
 
 const Wrapper = styled.div`
     padding: 20px;
-    background: teal;
+    background: orange;
     position: relative;
     font: 12px sans-serif;
 
