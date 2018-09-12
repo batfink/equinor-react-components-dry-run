@@ -10,7 +10,8 @@
         "start": "start-storybook -p 9001",
         "build": "build-storybook -o public",
         "lerna": "lerna",
-        "commitmsg": "commitlint -E GIT_PARAMS"
+        "commitmsg": "commitlint -E GIT_PARAMS",
+        "pub": "lerna publish"
     },
     "devDependencies": {
         "@commitlint/cli": "^7.1.2",
