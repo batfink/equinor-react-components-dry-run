@@ -20,10 +20,9 @@ const Wrapper = styled.div`
         background: rgba(255,255,255,0.8);
     }
 
-    /*& .lintError {
-        display: -ms-grid;
-        display: grid;
-    }*/
+    & .lintError {
+        /* display: -ms-grid; */
+    }
 `
 
 Bar.propTypes = {
