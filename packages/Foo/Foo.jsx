@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Bar from '@equinor-internal/bar'
 
-const Foo = ({ className, ...props }) => (<Wrapper className={ className } { ...props }><Bar /></Wrapper>)
+const Foo = ({ className, ...props }) =>
+    (<Wrapper className={ className } { ...props }><Bar /></Wrapper>)
 
 const Wrapper = styled.div`
     padding: 20px;
