@@ -1,11 +1,11 @@
 {
     "name": "@equinor-internal/foo",
     "main": "Foo",
-    "version": "0.3.0",
+    "version": "0.3.1",
     "author": "Victor Nystad",
     "license": "UNLICENSED",
     "dependencies": {
-        "@equinor-internal/bar": "^0.2.0",
+        "@equinor-internal/bar": "^0.2.1",
         "prop-types": "^15.6.2",
         "react": "^16.5.0",
         "styled-components": "^3.4.5"
