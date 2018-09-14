@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/batfink/equinor-react-components-dry-run/compare/@equinor-internal/bar@0.2.1...@equinor-internal/bar@0.3.0) (2018-09-14)
+
+
+### Features
+
+* change color to orange ([86ca604](https://github.com/batfink/equinor-react-components-dry-run/commit/86ca604))
+
+
+
+
+
 <a name="0.2.1"></a>
 ## [0.2.1](https://github.com/batfink/equinor-react-components-dry-run/compare/@equinor-internal/bar@0.2.0...@equinor-internal/bar@0.2.1) (2018-09-14)
 

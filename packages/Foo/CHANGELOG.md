@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+<a name="0.3.2"></a>
+## [0.3.2](https://github.com/batfink/equinor-react-components-dry-run/compare/@equinor-internal/foo@0.3.1...@equinor-internal/foo@0.3.2) (2018-09-14)
+
+**Note:** Version bump only for package @equinor-internal/foo
+
+
+
+
+
 <a name="0.3.1"></a>
 ## [0.3.1](https://github.com/batfink/equinor-react-components-dry-run/compare/@equinor-internal/foo@0.3.0...@equinor-internal/foo@0.3.1) (2018-09-14)
 
