@@ -39,7 +39,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.0.1",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/plugin-syntax-jsx": "^7.0.0",
     "@babel/plugin-transform-react-display-name": "^7.0.0",
@@ -47,7 +46,7 @@
     "@commitlint/cli": "^7.1.2",
     "@commitlint/config-conventional": "^7.1.2",
     "@storybook/react": "^3.4.10",
-    "babel-core": "^6.26.3",
+    "babel-core": "^7.0.0-0",
     "babel-jest": "^23.6.0",
     "babel-plugin-styled-components": "^1.6.4",
     "enzyme-to-json": "^3.3.4",

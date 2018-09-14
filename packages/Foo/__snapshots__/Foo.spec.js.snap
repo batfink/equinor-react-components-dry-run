@@ -3,8 +3,8 @@
 exports[`Foo should render same as snapshot 1`] = `
 .c1 {
   padding: 20px;
-  background: green;
   position: relative;
+  color: gray;
   font: 12px sans-serif;
 }
 
@@ -33,11 +33,27 @@ exports[`Foo should render same as snapshot 1`] = `
   background: rgba(255,255,255,0.8);
 }
 
-<div
-  className="c0"
+<Foo
+  className=""
 >
-  <div
-    className="c1"
-  />
-</div>
+  <Foo__Wrapper
+    className=""
+  >
+    <div
+      className="c0"
+    >
+      <Bar
+        className=""
+      >
+        <Bar__Wrapper
+          className=""
+        >
+          <div
+            className="c1"
+          />
+        </Bar__Wrapper>
+      </Bar>
+    </div>
+  </Foo__Wrapper>
+</Foo>
 `;

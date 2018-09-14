@@ -6,12 +6,13 @@ import Adapter from 'enzyme-adapter-react-16'
 
 Enzyme.configure({ adapter: new Adapter() })
 
-const { shallow } = Enzyme
+const { mount } = Enzyme
 
 describe('Bar', () => {
     it('should render same as snapshot', () => {
-        const tree = shallow(<Bar />)
+        const tree = mount(<Bar active={ false } />)
 
         expect(tree).toMatchSnapshot()
+        expect(tree).toHaveStyleRule('color', 'gray')
     })
 })

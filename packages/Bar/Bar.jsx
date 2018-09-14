@@ -7,8 +7,8 @@ const Bar = ({ className, ...props }) =>
 
 const Wrapper = styled.div`
     padding: 20px;
-    background: green;
     position: relative;
+    color: ${ props => props.active ? 'green' : 'gray' };
     font: 12px sans-serif;
 
     &::before {

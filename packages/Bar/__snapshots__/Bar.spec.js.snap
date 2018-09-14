@@ -1,7 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Bar should render same as snapshot 1`] = `
-<Bar__Wrapper
+.c0 {
+  padding: 20px;
+  position: relative;
+  color: gray;
+  font: 12px sans-serif;
+}
+
+.c0::before {
+  position: absolute;
+  content: 'Bar';
+  top: 2px;
+  left: 2px;
+  padding: 0.2em;
+  background: rgba(255,255,255,0.8);
+}
+
+<Bar
+  active={false}
   className=""
-/>
+>
+  <Bar__Wrapper
+    active={false}
+    className=""
+  >
+    <div
+      className="c0"
+    />
+  </Bar__Wrapper>
+</Bar>
 `;

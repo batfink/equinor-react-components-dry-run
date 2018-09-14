@@ -5,4 +5,4 @@ import Bar from './Bar'
 
 const stories = storiesOf('Bar', module)
 
-stories.add('Default', () => <Bar />)
+stories.add('Default', () => <Bar active={ true }/>)
