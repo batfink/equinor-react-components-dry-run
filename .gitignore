@@ -1,4 +1,4 @@
 node_modules
-public/*
+docs/*
+lerna-debug.log
 
-lerna-debug.log 
