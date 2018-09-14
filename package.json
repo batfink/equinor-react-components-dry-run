@@ -1,60 +1,78 @@
 {
-    "name": "@equinior-internal/react-gui-components",
-    "version": "1.0.0",
-    "private": true,
-    "workspaces": [
-        "packages/*"
-    ],
-    "scripts": {
-        "start": "start-storybook -p 9001",
-        "build": "build-storybook -o public",
-        "lerna": "lerna",
-        "commitmsg": "commitlint -E GIT_PARAMS",
-        "pub": "lerna publish",
-        "clean": "lerna clean",
-        "lint:js": "eslint --ext js,jsx packages",
-        "lint:css": "stylelint \"packages/**/*.jsx\""
-    },
-    "lerna": {
-        "version": "independent",
-        "npmClient": "yarn",
-        "useWorkspaces": true,
-        "command": {
-            "publish": {
-                "conventionalCommits": true,
-                "allowBranch": "master",
-                "message": "chore(release): publish %s"
-            }
-        }
-    },
-    "commitlint": {
-        "extends": [
-            "@commitlint/config-conventional"
-        ]
-    },
-    "devDependencies": {
-        "@babel/core": "^7.0.1",
-        "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
-        "@babel/plugin-syntax-jsx": "^7.0.0",
-        "@babel/plugin-transform-react-display-name": "^7.0.0",
-        "@babel/plugin-transform-react-jsx": "^7.0.0",
-        "@commitlint/cli": "^7.1.2",
-        "@commitlint/config-conventional": "^7.1.2",
-        "@storybook/react": "^3.4.10",
-        "babel-core": "7.0.0-bridge.0",
-        "babel-plugin-styled-components": "^1.6.4",
-        "eslint": "^5.5.0",
-        "eslint-plugin-react": "^7.11.1",
-        "husky": "^0.14.3",
-        "lerna": "^3.3.0",
-        "react-dom": "^16.5.0",
-        "stylelint": "^9.5.0",
-        "stylelint-config-recommended": "^2.1.0",
-        "stylelint-config-styled-components": "^0.1.1",
-        "stylelint-custom-processor-loader": "^0.5.0",
-        "stylelint-processor-styled-components": "^1.3.2"
-    },
-    "resolutions": {
-        "babel-core": "7.0.0-bridge.0"
+  "name": "@equinior-internal/react-gui-components",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "start-storybook -p 9001",
+    "build": "build-storybook -o public",
+    "lerna": "lerna",
+    "commitmsg": "commitlint -E GIT_PARAMS",
+    "pub": "lerna publish",
+    "clean": "lerna clean",
+    "lint:js": "eslint --ext js,jsx packages",
+    "lint:css": "stylelint \"packages/**/*.jsx\"",
+    "test": "jest"
+  },
+  "lerna": {
+    "version": "independent",
+    "npmClient": "yarn",
+    "useWorkspaces": true,
+    "command": {
+      "publish": {
+        "conventionalCommits": true,
+        "allowBranch": "master",
+        "message": "chore(release): publish %s"
+      }
     }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-jsx": "^7.0.0",
+    "@babel/plugin-transform-react-display-name": "^7.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-conventional": "^7.1.2",
+    "@storybook/react": "^3.4.10",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-styled-components": "^1.6.4",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^5.5.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^0.14.3",
+    "lerna": "^3.3.0",
+    "react-dom": "^16.5.0",
+    "regenerator-runtime": "^0.12.1",
+    "stylelint": "^9.5.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-custom-processor-loader": "^0.5.0",
+    "stylelint-processor-styled-components": "^1.3.2"
+  },
+  "resolutions": {
+    "babel-core": "7.0.0-bridge.0"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "jest": "^23.6.0",
+    "jest-styled-components": "^6.2.0",
+    "react-test-renderer": "^16.5.0"
+  }
 }

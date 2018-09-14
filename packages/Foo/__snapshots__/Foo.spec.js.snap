@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Foo should render same as snapshot 1`] = `
+.c1 {
+  padding: 20px;
+  background: green;
+  position: relative;
+  font: 12px sans-serif;
+}
+
+.c1::before {
+  position: absolute;
+  content: 'Bar';
+  top: 2px;
+  left: 2px;
+  padding: 0.2em;
+  background: rgba(255,255,255,0.8);
+}
+
+.c0 {
+  padding: 20px;
+  background: red;
+  position: relative;
+  font: 12px sans-serif;
+}
+
+.c0::before {
+  position: absolute;
+  content: 'Foo';
+  top: 2px;
+  left: 2px;
+  padding: 0.2em;
+  background: rgba(255,255,255,0.8);
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  />
+</div>
+`;

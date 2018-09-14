@@ -7,7 +7,7 @@ const Bar = ({ className, ...props }) =>
 
 const Wrapper = styled.div`
     padding: 20px;
-    background: yellow;
+    background: green;
     position: relative;
     font: 12px sans-serif;
 
