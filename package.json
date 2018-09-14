@@ -7,7 +7,7 @@
     ],
     "scripts": {
         "start": "start-storybook -p 9001",
-        "build": "build-storybook -o public",
+        "build": "build-storybook -o docs",
         "lerna": "lerna",
         "commitmsg": "commitlint -E GIT_PARAMS",
         "pub": "lerna publish",
