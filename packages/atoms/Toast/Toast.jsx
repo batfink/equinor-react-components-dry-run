@@ -2,8 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { hsl, tint } from 'polished'
-import { moss, heritage, energy, lichen, colors } from 'app/themes/colors'
-import Icon from '../Icon'
+import { moss, heritage, energy, lichen, colors } from './colors'
 
 const tango = { hue: 26, saturation: 0.85, lightness: 0.44 }
 const tangoSaturated = { ...tango, saturation: 1 }
@@ -53,7 +52,6 @@ const Button = styled.button`
 const Toast = ({ className, style, children, variant, onClick }) => (
     <Wrapper className={ className } style={ style } variant={ variant }>
         <Button onClick={ onClick }>
-            <Icon icon="times-circle" />
         </Button>
         { children }
     </Wrapper>
