@@ -3,17 +3,19 @@
     "version": "1.0.0",
     "private": true,
     "workspaces": [
-        "packages/*"
+        "packages/atoms/*"
     ],
     "scripts": {
-        "start": "start-storybook -p 9001",
+        "start": "start-storybook -p 9002",
         "build": "build-storybook -o docs",
         "lerna": "lerna",
         "commitmsg": "commitlint -E GIT_PARAMS",
         "pub": "lerna publish",
         "clean": "lerna clean",
         "lint:js": "eslint --ext js,jsx packages",
-        "lint:css": "stylelint \"packages/**/*.jsx\""
+        "lint:css": "stylelint \"packages/**/*.jsx\"",
+        "test": "jest",
+        "test:generate-output": "jest --json --outputFile=jest-test-results.json"
     },
     "lerna": {
         "version": "independent",
@@ -32,6 +34,9 @@
             "@commitlint/config-conventional"
         ]
     },
+    "jest": {
+        "verbose": true
+    },
     "devDependencies": {
         "@babel/core": "^7.0.1",
         "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
@@ -40,14 +45,19 @@
         "@babel/plugin-transform-react-jsx": "^7.0.0",
         "@commitlint/cli": "^7.1.2",
         "@commitlint/config-conventional": "^7.1.2",
+        "@storybook/addon-jest": "^3.4.10",
         "@storybook/react": "^3.4.10",
         "babel-core": "7.0.0-bridge.0",
-        "babel-plugin-styled-components": "^1.6.4",
+        "babel-eslint": "^9.0.0",
+        "babel-jest": "^23.6.0",
+        "babel-plugin-styled-components": "^1.7.1",
         "eslint": "^5.5.0",
         "eslint-plugin-react": "^7.11.1",
         "husky": "^0.14.3",
+        "jest": "^23.6.0",
         "lerna": "^3.3.0",
         "react-dom": "^16.5.0",
+        "react-test-renderer": "^16.5.1",
         "stylelint": "^9.5.0",
         "stylelint-config-recommended": "^2.1.0",
         "stylelint-config-styled-components": "^0.1.1",
@@ -56,5 +66,8 @@
     },
     "resolutions": {
         "babel-core": "7.0.0-bridge.0"
+    },
+    "dependencies": {
+        "@babel/polyfill": "^7.0.0"
     }
 }

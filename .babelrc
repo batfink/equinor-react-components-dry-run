@@ -3,7 +3,7 @@
         "@babel/plugin-syntax-jsx",
         "@babel/plugin-transform-react-jsx",
         "@babel/plugin-transform-react-display-name",
-        [ "babel-plugin-styled-components", { "pure": true } ],
+        "styled-components",
         "@babel/plugin-proposal-object-rest-spread"
-    ] 
+    ]
 }
