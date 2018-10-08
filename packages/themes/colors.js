@@ -1,4 +1,4 @@
-import { hsl, parseToHsl } from 'polished'
+import { hsl } from 'polished'
 
 /* eslint-disable no-multi-spaces */
 /* eslint-disable key-spacing */
@@ -13,16 +13,6 @@ export const colors = {
     spruce:   { hue:  25, saturation: 1.00, lightness:  0.92 },
     lichen:   { hue: 138, saturation: 0.67, lightness:  0.94 },
     mist:     { hue: 199, saturation: 0.58, lightness:  0.90 },
-}
-
-export const adjustColor = ({ color, lightness, saturation }) => {
-    const modifiedColor = {
-        ...parseToHsl(color),
-        ...(saturation ? { saturation } : {}),
-        ...(lightness ? { lightness } : {}),
-    }
-
-    return hsl(modifiedColor)
 }
 
 export const white     = hsl(colors.white)
