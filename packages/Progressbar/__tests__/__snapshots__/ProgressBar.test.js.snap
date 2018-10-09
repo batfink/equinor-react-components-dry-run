@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBar should render a ProgressBar 1`] = `
+.c0 {
+  background: #243847;
+  border-radius: 5px;
+  height: 10px;
+  border: 1px solid #bdc3c7;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`ProgressBar should render a ProgressBar with animation 1`] = `
+.c0 {
+  background: #243847;
+  border-radius: 5px;
+  height: 10px;
+  border: 1px solid #bdc3c7;
+  -webkit-animation: eirxjL 6s infinite reverse linear;
+  animation: eirxjL 6s infinite reverse linear;
+  background-image: repeating-linear-gradient( -45deg,#bdc3c7,#bdc3c7 20px,#d7ebf4 20px,#d7ebf4 40px );
+  background-size: 200% 100%;
+}
+
+<div
+  className="c0"
+/>
+`;

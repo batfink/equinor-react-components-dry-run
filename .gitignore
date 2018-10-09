@@ -2,4 +2,4 @@ node_modules
 docs/*
 lerna-debug.log
 jst-test-results.json
-
+package-lock.json

@@ -1,4 +1,3 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import styled, { keyframes, css } from 'styled-components';
 import { tint } from 'polished';
@@ -27,7 +26,7 @@ const animatedBackground = css`
     background-size: 200% 100%;
 `;
 
-const Progressbar = styled.div`
+const ProgressBar = styled.div`
     background: ${slate};
     border-radius: 5px;
     height: 10px;
@@ -35,8 +34,8 @@ const Progressbar = styled.div`
     ${({ showAnimation }) => showAnimation && animatedBackground};
 `;
 
-Progressbar.propTypes = { showAnimation: PropTypes.bool };
+ProgressBar.propTypes = { showAnimation: PropTypes.bool };
 
-Progressbar.defaultProps = { showAnimation: false };
+ProgressBar.defaultProps = { showAnimation: false };
 
-export default Progressbar;
+export default ProgressBar;
