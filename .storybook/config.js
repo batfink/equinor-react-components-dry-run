@@ -1,12 +1,15 @@
 import { configure, addDecorator } from '@storybook/react'
-import React, { Fragment } from 'react'
-import styled, { createGlobalStyle } from 'styled-components'
+// import withInfo from '@storybook/addon-info'
+import React from 'react'
+import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
     body {
         background: gray;
     }
 `
+
+// addDecorator(withInfo)
 
 addDecorator( story => (
     <>

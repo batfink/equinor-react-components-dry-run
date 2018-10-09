@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled, { createGlobalStyle } from 'styled-components'
-import { energy, moss } from '../../themes/colors'
+import { energy, moss } from './colors'
 import Label from './Label'
 
 const stories = storiesOf('Label', module)

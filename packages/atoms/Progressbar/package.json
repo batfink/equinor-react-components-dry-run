@@ -1,14 +1,19 @@
 {
-    "name": "progressbar",
-    "main": "Progressbar",
+    "name": "@equinor/react-progressbar",
+    "module": "src/Progressbar.jsx",
+    "main": "dist/Progressbar",
     "version": "0.0.0",
-    "devDependencies": {
-        "polished": "^2.2.0",
-        "prop-types": "^15.6.2",
-        "react": "^16.5.2",
-        "styled-components": "^3.4.9"
+    "license": "UNLICENSED",
+    "scripts": {
+        "prepare": "yarn build",
+        "clean": "rimraf dist && mkdir dist",
+        "bundle": "rollup -c",
+        "build": "npm-run-all clean bundle"
     },
-    "dependencies": {
-        "styled-components": "^4.0.0-beta.10"
+    "peerDependencies": {
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0",
+        "prop-types": "^15.6.2",
+        "styled-components": "^4.0.0-beta"
     }
 }

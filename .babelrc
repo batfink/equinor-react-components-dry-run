@@ -1,8 +1,13 @@
 {
+    "presets": [
+        "@babel/preset-react",
+        [
+            "@babel/preset-env", {
+                "modules": false
+            }
+        ]
+    ],
     "plugins": [
-        "@babel/plugin-syntax-jsx",
-        "@babel/plugin-transform-react-jsx",
-        "@babel/plugin-transform-react-display-name",
         "styled-components",
         "@babel/plugin-proposal-object-rest-spread"
     ]

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes, css } from 'styled-components'
 import { tint } from 'polished'
-import { slate, mist } from '../../themes/colors'
+import { slate, mist } from './colors'
 
 const tinted = tint(0.7, slate)
 

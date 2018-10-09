@@ -1,0 +1,13 @@
+{
+    "name": "@equinor/colors",
+    "main": "dist/colors.js",
+    "module": "lib/colors.js",
+    "version": "0.0.1",
+    "license": "UNLICENSED",
+    "scripts": {
+        "prepare": "yarn build",
+        "clean": "rimraf dist && mkdir dist",
+        "bundle": "rollup -c",
+        "build": "npm-run-all clean bundle"
+    }
+}

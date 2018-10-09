@@ -1,8 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
-import { energy, moss } from '../../themes/colors'
-import Label from '../Label'
+import { energy, moss } from './colors'
+import Label from '@equinor/react-label'
 import Progressbar from './Progressbar'
 
 const stories = storiesOf('Progressbar', module)
