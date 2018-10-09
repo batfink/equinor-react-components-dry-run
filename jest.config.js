@@ -8,11 +8,11 @@ module.exports = {
     moduleFileExtensions: ['js', 'json', 'jsx', 'node'],
     moduleFileExtensions: ['js', 'jsx'],
     roots: ['./'],
-    setupTestFrameworkScriptFile: './enzyme.js',
+    setupTestFrameworkScriptFile: './testSetup.js',
     testEnvironment: 'node',
     transform: {
         '^.+\\.js$': './jestTransformer.js',
         '^.+\\.jsx$': './jestTransformer.js'
     },
-    verbose: true
+    verbose: false
 };

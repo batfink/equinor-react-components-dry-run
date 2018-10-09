@@ -1,11 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
-import { energy, moss } from '../../themes/colors'
-import Label from '../Label'
-import Progressbar from './Progressbar'
+import { energy, moss } from '../themes/colors'
+import Label from '../Label/lib/Label'
+import ProgressBar from './lib/ProgressBar'
 
-const stories = storiesOf('Progressbar', module)
+const stories = storiesOf('ProgressBar', module)
 
 const Wrapper = styled.div`
     display: grid;
@@ -26,12 +26,12 @@ stories
     .add('Default', () => (
         <Label style={ { width: '400px' } }>
             <SmallLabel>Syncronizing data…</SmallLabel>
-            <Progressbar />
+            <ProgressBar />
         </Label>
     ))
     .add('Animation', () => (
         <Label style={ { width: '400px' } }>
             <SmallLabel>Syncronizing data…</SmallLabel>
-            <Progressbar showAnimation />
+            <ProgressBar showAnimation />
         </Label>
     ))
