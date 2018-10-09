@@ -15,12 +15,9 @@ extends:
 
 settings:
     react:
-        version: '16.0'
+        version: '16.5.2'
 
 rules:
-    semi:
-        - error
-        - never
     indent:
         - error
         - 4
