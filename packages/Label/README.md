@@ -1,11 +1,11 @@
 # `label`
 
-> TODO: description
+Label extends the label html element
 
 ## Usage
 
 ```
-const label = require('label');
+import Label from '@equinor-ui-components/Label';
 
-// TODO: DEMONSTRATE API
+<Label>Name</Label>
 ```

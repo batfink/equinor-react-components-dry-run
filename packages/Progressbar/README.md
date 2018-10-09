@@ -1,11 +1,13 @@
 # `ProgressBar`
 
-> TODO: description
+ProgressBar is used for visualizing progress
 
 ## Usage
 
 ```
-const progressBar = require('ProgressBar');
+import ProgressBar from '@equinor-ui-components/ProgressBar';
 
-// TODO: DEMONSTRATE API
+<ProgressBar />
+
+<ProgressBar showAnimation />
 ```
