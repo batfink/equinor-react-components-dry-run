@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import styled from 'styled-components'
-import { energy, moss } from './colors'
+import { moss } from './colors'
 import Label from '@equinor/react-label'
 import Progressbar from './Progressbar'
 
