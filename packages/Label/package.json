@@ -1,35 +1,43 @@
 {
-  "name": "label",
-  "main": "Label",
-  "version": "0.0.1",
-  "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.5.2",
-    "styled-components": "^4.0.0-beta.10"
-  },
-  "description": "Label",
-  "keywords": [
-    "Label",
-    "html"
-  ],
-  "author": "fortena <arnigeir@gmail.com>",
-  "homepage": "https://github.com/batfink/equinor-react-components-dry-run#readme",
-  "license": "ISC",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/batfink/equinor-react-components-dry-run.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
-  "bugs": {
-    "url": "https://github.com/batfink/equinor-react-components-dry-run/issues"
-  }
+    "name": "label",
+    "main": "dist/Label.js",
+    "module": "lib/Label.jsx",
+    "version": "0.0.1",
+    "description": "Label",
+    "keywords": [
+        "Label",
+        "html"
+    ],
+    "author": "SIB <fg_gpl@equinor.com>",
+    "homepage": "https://github.com/batfink/equinor-react-components-dry-run#readme",
+    "license": "MIT",
+    "directories": {
+        "lib": "lib",
+        "test": "__tests__"
+    },
+    "files": [
+        "lib",
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/batfink/equinor-react-components-dry-run.git"
+    },
+    "scripts": {
+        "prepare": "yarn build",
+        "rmDist": "rimraf dist",
+        "mkDist": "mkdirp dist",
+        "clean": "npm-run-all rmDist mkDist",
+        "bundle": "rollup -c",
+        "build": "npm-run-all clean bundle"
+    },
+    "peerDependencies": {
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0",
+        "prop-types": "^15.6.2",
+        "styled-components": "^4.0.0-beta"
+    },
+    "bugs": {
+        "url": "https://github.com/batfink/equinor-react-components-dry-run/issues"
+    }
 }
