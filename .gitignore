@@ -1,6 +1,7 @@
 node_modules
-docs/*
 lerna-debug.log
 jst-test-results.json
 yarn-error.log
 **/dist
+.DS_Store
+package-lock.json
